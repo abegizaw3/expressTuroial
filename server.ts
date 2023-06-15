@@ -7,6 +7,8 @@ app.set("view engine", "ejs"); //sets up view engine
 
 app.use(logger); //Middleware Will be used everywhere since you defined it at the top
 app.use(express.static("public")); //run all static pages in public
+app.use(express.urlencoded({ extended: true })); //allows us to access info coming from forms
+app.use(express.json()); //works like above but takes json info 
 
 /**
  * @date 6/15/2023 - 8:01:59 AM
