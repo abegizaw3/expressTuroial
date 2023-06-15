@@ -2,7 +2,7 @@ import express, { Request, Response } from 'express';
 
 const app = express() //sets up the actual server
 
-
+app.set('view engine', 'ejs') //sets up view engine
 /**
  * @date 6/15/2023 - 8:01:59 AM
  * When someone makes a get request to this route, it sends Hi
